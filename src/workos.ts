@@ -70,6 +70,7 @@ export class WorkOS {
         Authorization: `Bearer ${this.key}`,
         'User-Agent': `workos-node/${VERSION}`,
       },
+      httpsAgent: this.options.httpsAgent,
     });
   }
 
